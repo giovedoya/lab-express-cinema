@@ -1,7 +1,11 @@
 body {
   padding: 0;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;  
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+  min-width: 100vh;  
 }
+/* HOME PAGE*/
+
 .home-cinema{
   background-image: url(../images/cinema.jpg);
   background-repeat: no-repeat;
@@ -78,3 +82,65 @@ a {
   background: rgba(0, 0, 0, .08);
   color: rgba(0, 0, 0, .3);
 }
+
+/* MOVIES PAGE*/
+.container{
+  display: flex;
+  flex-direction: column;
+  padding: 5vh;
+}
+.all-movies-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.container-movies{
+  width: 33%;
+  padding-bottom: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container h1{
+  font-size: 5vh;
+  font-weight: bold;
+}
+.container p{
+  font-size: 3vh;
+}
+.container a{
+  font-size: 2vh;
+}
+.cards h4{
+  padding-top: 2vh;
+  font-weight: bold;
+  text-align: center;
+}
+.cards p{
+  text-align: center;
+  padding: 0.5vh;
+}
+
+/* MOVIES DETAIL*/
+.container-details{
+  width: 50%;
+  display: flex;
+  align-content: center;
+  padding: 5vh;
+  gap: 5vh;
+}
+ .container-details h2, h3, h4{
+  font-weight: bold;
+  padding-bottom: 2vh;
+ }
+ .container-details h2{
+  font-size: 3vh;
+ }
+ .container-details p{
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+ }
+ .link-detail{
+  padding: 5vh;
+  font-size: 3vh;
+ }

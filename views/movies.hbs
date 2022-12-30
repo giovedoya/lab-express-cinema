@@ -1,20 +1,13 @@
-
-    <div>
-        <div>
-            <a href="/">Go back</a>
-        </div>
-        <div>
-            <h1>Ironhack Cinema</h1>
-            <p>Click on the movie to check the showtimes</p>
-        </div>
-    </div>
-    <div>
-        {{#each movies}}
-    <div>
+<div class="container">
+    <h1>Ironhack Cinema</h1>
+    <p>Click on the movie to check the showtimes</p>
+    <a href="/">Go back</a>
+</div>
+<div class="all-movies-container">
+    {{#each movies}}
+    <div class="container-movies">
         {{> movieCards this}}
     </div>
         {{/each}}
-    </div>
- 
-
+</div>
 
