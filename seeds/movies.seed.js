@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+mongoose.set('strictQuery', true)
 const Movie = require('../models/Movie.model');
 const MONGO_URL = 'mongodb://127.0.0.1:27017/lab-express-cinema'; 
 
