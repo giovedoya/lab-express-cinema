@@ -1,3 +1,16 @@
+const mongoose = require('mongoose');
+const Movie = require('../models/Movie.model');
+const MONGO_URL = 'mongodb://127.0.0.1:27017/lab-express-cinema'; 
+
+mongoose.connect(MONGO_URL)
+  .then(response => console.log(`Connected to the database ${response.connection.name}`))
+  .then (() => {
+      Movie.create(movies)
+  })
+  .then(createdMovies => console.log(`Inserted ${createdMovies.length} movies in the database`))
+  .then(() => mongoose.connection.close())
+  .catch(err => console.log(err))
+
 const movies = [
     {
       title: "A Wrinkle in Time",
@@ -80,5 +93,5 @@ const movies = [
       showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
     }
   ];
-  
-  
+
+
